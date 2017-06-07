@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Lab 01</title>
+    <!-- dit script: werkt met variabelen
+auteur: Dzemal Velic-->
+</head>
+<body>
+<script type="text/javascript">
+    var klantnaam = prompt("Hoe jij heet");
+    var aantal = parseInt(prompt("Hoeveel jij wil"));
+    var titel = "JavaScripts";
+    var prijs = 29.90;
+    var bedrag = prijs * aantal  ;
+    var BTW = (6/100) * bedrag ;
+    var totaal = prijs + BTW ;
+    document.writeln("Bedankt voor je bestelling:" + klantnaam + "<br />");
+    document.writeln("Boektitel is: " + titel + "<br />");
+    document.writeln("Aantal te bestellen:" + aantal + "<br />");
+
+    document.writeln("Totaal bedrag:" + bedrag.toFixed(2) + "<br />");
+    document.writeln("BTW is 6% van bedrag:" + BTW.toFixed(2) + "<br />") ;
+    document.writeln("Totaal bedrag inclusief BTW:" + totaal.toFixed(2)) ;
+</script>
+
+</body>
+</html>
